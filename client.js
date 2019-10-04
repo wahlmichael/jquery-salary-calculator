@@ -41,5 +41,8 @@ function updateSalary(newSal){
     totalSalary += newSal;
     let totalMonthlySalary = totalSalary / 12;
     $('#salaryDisplay').text(totalMonthlySalary);
+    if (totalMonthlySalary > 20000){
+        $('#salaryDisplay').addClass('red');
+    }
     return totalSalary;
 }
