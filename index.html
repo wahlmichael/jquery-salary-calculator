@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="client.js"></script>
+    <title>jQuery Salary Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Salary Calculator</h1>
+        </header>
+
+        <section>
+            <div id="inputArea">
+                <h3>Add Employee</h3>
+                <div id="inputs">
+                    <input id="fName" type="text" placeholder="First Name">
+                    <input id="lName" type="text" placeholder="Last Name">
+                    <input id="idNumber" type="number" placeholder="ID">
+                    <input id="title" type="text" placeholder="Title">
+                    <input id="salary" type="number" placeholder="Annual Salary">
+                </div>
+                <button id="inputBtn">Submit</button>
+            </div>
+
+            <div id="outputArea">
+                <h3>Employees</h3>
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Annual Salary</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Jen</th>
+                        <th>Barber</th>
+                        <th>4521</th>
+                        <th>Team Lead</th>
+                        <th>$80,000</th>
+                        <th><button class="deleteBtn">Delete</button></th>
+                    </tr>
+                    <tr>
+                        <th>Maurice</th>
+                        <th>Moss</th>
+                        <th>8724</th>
+                        <th>Support Team</th>
+                        <th>$58,000</th>
+                        <th><button class="deleteBtn">Delete</button></th>
+                    </tr>
+                    <tr>
+                        <th>Roy</th>
+                        <th>Smith</th>
+                        <th>9623</th>
+                        <th>Quaity Assurance</th>
+                        <th>$48,000</th>
+                        <th><button class="deleteBtn">Delete</button></th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <h3>Total Monthly: </h3>
+        </footer>
+    </div>
+</body>
+</html>
