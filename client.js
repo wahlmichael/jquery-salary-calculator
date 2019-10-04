@@ -4,6 +4,7 @@ $('document').ready(onReady);
 
 function onReady(){
     $('#inputBtn').on('click', inputClick);
+    $('table').on('click', '.deleteBtn', deleteEntry);
 }
 
 function inputClick(){
@@ -25,4 +26,8 @@ function addToDom(){
         <th><button class="deleteBtn">Delete</button></th>
     </tr>`
     $('table').append(output);
+}
+
+function deleteEntry(){
+    $(this).closest('tr').remove();
 }
