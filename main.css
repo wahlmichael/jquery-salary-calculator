@@ -1,3 +1,35 @@
+#container {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #F3E0BE;
+    color: white;
+}
+
+header{
+    background: #2A293E;
+}
+
+section{
+    background: #577284;
+}
+
+footer{
+    background: #577284;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
 .red {
     color: red;
 }
