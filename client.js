@@ -1,10 +1,13 @@
 console.log('client.js running')
 
+let totalSalary = 186000;
+
 $('document').ready(onReady);
 
 function onReady(){
     $('#inputBtn').on('click', inputClick);
     $('table').on('click', '.deleteBtn', deleteEntry);
+    
 }
 
 function inputClick(){
@@ -14,6 +17,7 @@ function inputClick(){
     title = $('#title').val();
     salary = $('#salary').val();
     addToDom();
+    updateSalary(salary);
 }
 
 function addToDom(){
@@ -30,4 +34,12 @@ function addToDom(){
 
 function deleteEntry(){
     $(this).closest('tr').remove();
+}
+
+function updateSalary(newSal){
+    newSal = Number(newSal);
+    totalSalary += newSal;
+    let totalMonthlySalary = totalSalary / 12;
+    $('#salaryDisplay').text(totalMonthlySalary);
+    return totalSalary;
 }
