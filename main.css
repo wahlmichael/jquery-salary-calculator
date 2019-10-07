@@ -1,5 +1,5 @@
 #container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -11,6 +11,7 @@ body {
 
 header{
     background: #2A293E;
+    padding: 25px;
 }
 
 section{
@@ -28,8 +29,27 @@ h1 {
 
 h3 {
     margin: 0;
+    padding: 15px;
 }
 
 .red {
     color: red;
+}
+
+#inputArea {
+    border: 1px solid black;
+}
+
+#inputs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 12px;
+}
+
+#inputBtn {
+    text-align: right;
 }

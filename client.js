@@ -18,16 +18,17 @@ function inputClick(){
     salary = $('#salary').val();
     addToDom();
     updateSalary(salary);
+    $('#inputs')[0].reset();
 }
 
 function addToDom(){
     let output = `<tr>
-        <th>${fName}</th>
-        <th>${lName}</th>
-        <th>${idNumber}</th>
-        <th>${title}</th>
-        <th>$${salary}</th>
-        <th><button class="deleteBtn">Delete</button></th>
+        <td>${fName}</td>
+        <td>${lName}</td>
+        <td>${idNumber}</td>
+        <td>${title}</td>
+        <td>$${salary}</td>
+        <td><button class="deleteBtn">Delete</button></td>
     </tr>`
     $('table').append(output);
 }
